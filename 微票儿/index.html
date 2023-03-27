@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入资源 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/adapter.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航条 -->
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#"><img src="./image/logoMsg.png" alt=""></a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-left my-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">全国</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            演出
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">演出票</a></li>
+                            <li><a href="#">场馆</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">我的微票儿 <span class="label label-danger">new</span> </a></li>
+                </ul>
+            </div>
+            <div class="adapter">
+                <ul class="nav navbar-nav navbar-right adapter-login">
+                    <li><a href="#" data-toggle="modal" data-target="#login">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+                <form class="navbar-form navbar-right adapter-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入搜索内容">
+                        <span class="btn btn-default input-group-addon">搜索</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Banner -->
+    <div class="root">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./image/1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./image/2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./image/3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./image/4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="nwes-list">
+                        <h3>特惠看</h3>
+                        <img src="./image/img1.jpg" class="img-responsive" alt="">
+                        <div class="news-text">
+                            <p><a href="#">[苏州]2016迷笛电子音乐节(预售)</a></p>
+                            <p><a href="#">穿着花裤子喝着小酒通宵达旦</a></p>
+                            <p><a href="#">2016刘若英世界巡回演唱会</a></p>
+                            <p><a href="#">[上海]百老汇经典音乐剧--《狮子王》</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品列表 -->
+    <div class="container margin20">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/5.jpg" alt="">
+                    <div class="caption">
+                        <p>[上海]百老汇经典音乐剧《狮子王》</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/6.jpg" alt="">
+                    <div class="caption">
+                        <p>[上海]百老汇经典音乐剧《狮子王》</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/7.jpg" alt="">
+                    <div class="caption">
+                        <p>[上海]百老汇经典音乐剧《狮子王》</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/8.jpg" alt="">
+                    <div class="caption">
+                        <p>[上海]百老汇经典音乐剧《狮子王》</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 广告页 -->
+    <div class="container">
+        <a href="#"><img class="img-responsive" src="./image/ad1.jpg" alt=""></a>
+    </div>
+
+    <!-- 选项卡 -->
+    <div class="container margin20">
+        <ul class="nav nav-tabs">
+            <li><a href="#yanchanghui" data-toggle="tab">演唱会</a></li>
+            <li><a href="#tiyu" data-toggle="tab">体育赛事</a></li>
+            <li><a href="#wutai" data-toggle="tab">舞台剧</a></li>
+            <li><a href="#" data-toggle="tab">儿童亲子</a></li>
+            <li><a href="#" data-toggle="tab">音乐会</a></li>
+            <li><a href="#" data-toggle="tab">展览活动</a></li>
+        </ul>
+        <div class="tab-content">
+            <!-- fade in 动画的过渡效果 -->
+            <div class="tab-pane fade in active" id="yanchanghui">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/9.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/10.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/11.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/12.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/13.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/14.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/15.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/16.jpg" alt="">
+                            <div class="caption">
+                                <p>[苏州]2016迷笛电子音乐节</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="tiyu">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/9.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/10.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/11.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/12.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/13.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/14.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/15.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/16.jpg" alt="">
+                            <div class="caption">
+                                <p>[深圳]逃跑计划巡回演唱会深圳站</p>
+                                <p><span class="my-font">180</span>元起</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="wutai">
+                舞台剧
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 location">
+                    <img src="./image/footer_logo.png" alt="">
+                    <div class="right">
+                        <h3>微信电影票官网</h3>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 location">
+                    <img src="./image/footer_logo.png" alt="">
+                    <div class="right">
+                        <h3>微信电影票官网</h3>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 location">
+                    <img src="./image/f_wx.png" alt="">
+                    <img src="./image/f_wpr.png" alt="">
+                    <div class="right">
+                        <h3>微信电影票官网</h3>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </div>
+                </div>
+            </div>
+            <p class="icp">@2030北京微影时代科技有限公司版权所有 京ICP备14034406号-2</p>
+        </div>
+    </div>
+
+    <!-- 登录弹出框 -->
+    <div class="modal fade" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">登录</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#myCarousel").carousel({
+            interval: 2000
+        })
+    </script>
+
+</body>
+
+</html>
